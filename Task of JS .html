@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task JS</title>
+    <style>
+        .login-form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .login-form h2
+        {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Login</h1>
+        <form id="login-form">
+            <div class="input-group">
+                <label for="userName">User Name : </label>
+                <input type="text" id="userName" placeholder="User Name ">
+            </div><br>
+            <div class="input-group">
+                <label for="password">Password : </label>
+                <input type="password" id="password" placeholder="Password ">
+            </div>
+            <button onclick="login()">Login</button>
+        </form>
+        <div id="error-message" class="error"></div>
+    </div>
+
+
+</body>
+
+<script src="script.js"></script>
+</html>

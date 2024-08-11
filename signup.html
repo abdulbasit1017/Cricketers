@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form of Css</title>
+    <style>
+ table,tr,td{
+         text-align: center;
+         width: auto;
+}
+tr{
+    color: black;
+}
+input{
+    width: 90%;
+}
+td{
+  padding: 20px;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+table{
+  border-collapse: collapse;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+}
+div{
+  text-align: center;
+}
+h2{
+  text-align: center;
+}
+.box{
+  background-color: rgb(8, 8, 73);
+  border-radius: 12%;
+  color: white;
+  width: 20%;
+  margin : 1%;
+  padding:1% 0% 1% 0%;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"]
+{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: rgb(194, 194, 194);
+}
+.signup-btn {
+    width: 30%;
+    padding: 10px;
+    background: #003366;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.signup-btn:hover {
+    background: #002244;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="./Images/logo 2.jpg">
+        </div>
+        <h2 class="pageName"> Sign up into your account</h2>
+    </header>
+    <form>
+        <table>
+            <tr>
+                <td> 
+                    <label> First Name :</label>
+                    <input type="text"placeholder="Enter your name">
+                </td>
+                <td>
+                    <label>Last Name :</label>
+                    <input type="text"placeholder="Enter your name">
+                </td>
+            </tr>
+            <tr>
+                <td> 
+                    <label> Email Id :</label>
+                    <input type="email"placeholder="info@xyz.com">
+                </td>
+                <td>
+                    <label>Mobile No :</label>
+                    <input type="number"placeholder="+91-98596 58000">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label> Password :</label>
+                    <input type="password"placeholder="xxxxxxxxxx">
+                </td>  
+                <td>
+                    <label>Confirm Password :</label>
+                    <input type="password"placeholder="xxxxxxxxxx">
+                </td>
+            </tr>
+            <tr>
+                <td> 
+                    <label> Company Name :</label>
+                    <input type="name"placeholder="Enter company name">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+<footer>
+    <div>
+        <button type="submit" class="signup-btn">Sign up</button>
+    </div>
+    
+</footer>
+</html>

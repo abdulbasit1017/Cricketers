@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Sidebar</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .header, .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            left: 0;
+            z-index: 1000;
+        }
+        .header {
+            top: 0;
+        }
+        .footer {
+            bottom: 0;
+        }
+        .container {
+            display: flex;
+            margin-top: 4rem; 
+            margin-bottom: 4rem; 
+        }
+        .sidebar {
+            width: 200px;
+            background-color: #f4f4f4;
+            height: 100vh;
+            position: sticky;
+            top: 4rem; 
+            padding: 1rem;
+        }
+        .content {
+            flex: 1;
+            padding: 1rem;
+        }
+        .box {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            background-color: rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .box::before {
+            content: "150 x 150";
+            color: rgba(0, 0, 0, 0.3);
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">Fixed Header</div>
+    <div class="container">
+        <div class="sidebar">Sticky Sidebar</div>
+        <div class="content">
+            <div class="box">Relative Positioned Text Box</div>
+        </div>
+    </div>
+    <div class="footer">Footer</div>
+</body>
+   
+</html>

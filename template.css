@@ -1,0 +1,47 @@
+body
+{
+    font-family: Arial, sans-serif;
+}
+.container 1
+{
+    justify: inline;
+    
+}
+
+.header-row
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-links p
+{
+    display: inline;
+    justify-content: space-between;
+}
+.action-button
+{
+    display: inline;
+    margin-right: 32px;
+    font-weight: bold;
+    color: lightgreen;
+}
+.join-us-button
+{
+    display: inline;
+    padding: 15px 25px;
+    background-color: lightgreen;
+    border-radius: 5px;
+}
+.join-us-button p
+{
+    color: black;
+    margin: 0;
+}
+.hero 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}

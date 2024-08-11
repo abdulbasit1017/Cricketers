@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Form</title>
+    <!-- <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+</head>
+<body>
+    <div class="container">
+        <!-- Header with logos and school name -->
+        <div class="header">
+            <img src="left-logo.png" alt="Left Logo" class="logo">
+            <div class="school-name">Daanish School (Boys / Girls)</div>
+            <img src="right-logo.png" alt="Right Logo" class="logo">
+        </div>
+
+        <form>
+            <!-- Application form heading -->
+            <div class="form-section">
+                <h3>Application Form for Admission Class 6th ____ Entry 20__</h3>
+            </div>
+
+            <!-- Name of school where admission sought -->
+            <div class="form-section">
+                <h4>Name of school where admission sought:</h4>
+                <input type="text" class="form-control" name="school_name" required>
+            </div>
+
+            <!-- Category selection -->
+            <div class="form-section">
+                <h4>Category:</h4>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" id="category1" name="category" value="Deserving">
+                    <label class="form-check-label" for="category1">Deserving</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" id="category2" name="category" value="Provincial">
+                    <label class="form-check-label" for="category2">Provincial</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" id="category3" name="category" value="Cholistan">
+                    <label class="form-check-label" for="category3">Cholistan</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" id="category4" name="category" value="PATA">
+                    <label class="form-check-label" for="category4">PATA</label>
+                </div>
+            </div>
+
+            <!-- Information about Student -->
+            <div class="form-section">
+                <h4>Information about Student</h4>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="student-name">Student’s Name:</label>
+                        <input type="text" class="form-control" id="student-name" name="student_name" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="father-name">Father’s Name:</label>
+                        <input type="text" class="form-control" id="father-name" name="father_name" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="dob">Date of Birth:</label>
+                        <input type="date" class="form-control" id="dob" name="dob" required>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="age">Age:</label>
+                        <input type="number" class="form-control" id="age" name="age" required>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="year">Year:</label>
+                        <input type="number" class="form-control" id="year" name="year" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="address">Complete Address:</label>
+                    <input type="text" class="form-control" id="address" name="address" required>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="tehsil">Tehsil:</label>
+                        <input type="text" class="form-control" id="tehsil" name="tehsil" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="district">District:</label>
+                        <input type="text" class="form-control" id="district" name="district" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="passport-photo">Passport Size Photo:</label>
+                    <input type="file" class="form-control-file" id="passport-photo" name="passport_photo" required>
+                    <small class="form-text text-muted">Please upload a passport size photo.</small>
+                </div>
+            </div>
+
+            <!-- Information about Parents/Guardian -->
+            <div class="form-section">
+                <h4>Information about Parents/Guardian</h4>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="father-name">Father’s Name:</label>
+                        <input type="text" class="form-control" id="father-name" name="father_name" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="mother-name">Mother’s Name:</label>
+                        <input type="text" class="form-control" id="mother-name" name="mother_name" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="guardian-name">Guardian’s Name:</label>
+                        <input type="text" class="form-control" id="guardian-name" name="guardian_name" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="father-id">Father’s ID card No:</label>
+                        <input type="text" class="form-control" id="father-id" name="father_id" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="mother-id">Mother’s ID card No:</label>
+                        <input type="text" class="form-control" id="mother-id" name="mother_id" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="guardian-id">Guardian’s ID card No:</label>
+                        <input type="text" class="form-control" id="guardian-id" name="guardian_id" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="father-profession">Father’s Profession:</label>
+                        <input type="text" class="form-control" id="father-profession" name="father_profession" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="mother-profession">Mother’s Profession:</label>
+                        <input type="text" class="form-control" id="mother-profession" name="mother_profession" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="guardian-profession">Guardian’s Profession:</label>
+                        <input type="text" class="form-control" id="guardian-profession" name="guardian_profession" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="father-contact">Father’s Contact No:</label>
+                        <input type="text" class="form-control" id="father-contact" name="father_contact" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="mother-contact">Mother’s Contact No:</label>
+                        <input type="text" class="form-control" id="mother-contact" name="mother_contact" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="guardian-contact">Guardian’s Contact No:</label>
+                        <input type="text" class="form-control" id="guardian-contact" name="guardian_contact" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="father-income">Father’s Monthly Income:</label>
+                        <input type="number" class="form-control" id="father-income" name="father_income" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="mother-income">Mother’s Monthly Income:</label>
+                        <input type="number" class="form-control" id="mother-income" name="mother_income" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="guardian-income">Guardian’s Monthly Income:</label>
+                        <input type="number" class="form-control" id="guardian-income" name="guardian_income" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="father-qualification">Father’s Qualification:</label>
+                        <input type="text" class="form-control" id="father-qualification" name="father_qualification" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="mother-qualification">Mother’s Qualification:</label>
+                        <input type="text" class="form-control" id="mother-qualification" name="mother_qualification" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="guardian-qualification">Guardian’s Qualification:</label>
+                        <input type="text" class="form-control" id="guardian-qualification" name="guardian_qualification" required>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Information about Previous School -->
+            <div class="form-section">
+                <h4>Information about Previous School</h4>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="current-class">Student’s Present Class:</label>
+                        <input type="text" class="form-control" id="current-class" name="current_class" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="previous-school">Name of Previous School:</label>
+                        <input type="text" class="form-control" id="previous-school" name="previous_school" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="dob-school">Date of Birth (According to School record):</label>
+                        <input type="date" class="form-control" id="dob-school" name="dob_school" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="principal-name">Principal’s Name:</label>
+                        <input type="text" class="form-control" id="principal-name" name="principal_name" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="contact-prev-school">Contact No:</label>
+                    <input type="text" class="form-control" id="contact-prev-school" name="contact_prev_school" required>
+                </div>
+            </div>
+
+            <!-- Emergency Contacts -->
+            <div class="form-section">
+                <h4>The Applicant must nominate the names and details of two relatives in the space provided below who can be called in case of emergency.</h4>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="relative1-name">Name of Relative 1:</label>
+                        <input type="text" class="form-control" id="relative1-name" name="relative1_name" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="relative1-relation">Relation with Student:</label>
+                        <input type="text" class="form-control" id="relative1-relation" name="relative1_relation" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="relative1-phone">Phone No:</label>
+                        <input type="text" class="form-control" id="relative1-phone" name="relative1_phone" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="relative2-name">Name of Relative 2:</label>
+                        <input type="text" class="form-control" id="relative2-name" name="relative2_name" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="relative2-relation">Relation with Student:</label>
+                        <input type="text" class="form-control" id="relative2-relation" name="relative2_relation" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="relative2-phone">Phone No:</label>
+                        <input type="text" class="form-control" id="relative2-phone" name="relative2_phone" required>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Categories Check -->
+            <div class="form-section">
+                <h4>Please tick one category to which the applicant belongs:</h4>
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" id="category-a" name="category_check" value="Orphan - Both Parents Lost">
+                            <label class="form-check-label" for="category-a">a. He is an orphan having lost both of his parents and having no guardian or being taken care of by an elder sibling or a member of extended family.</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" id="category-b" name="category_check" value="Orphan - Mother">
+                            <label class="form-check-label" for="category-b">b. He is orphan and living with his mother.</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" id="category-c" name="category_check" value="Illiterate Parents - Disabled">
+                            <label class="form-check-label" for="category-c">c. His both parents are illiterate, the parents do not own any immovable property and either of them is disabled.</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" id="category-d" name="category_check" value="School Dropout - Illiterate Parents">
+                            <label class="form-check-label" for="category-d">d. He has been a school dropout and his both parents are illiterate and the parents do not own any immovable property.</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" id="category-e" name="category_check" value="Illiterate Parents - No Income">
+                            <label class="form-check-label" for="category-e">e. His both parents are illiterate, the parents do not own any immovable property and do not have any fixed job or source of income.</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" id="category-f" name="category_check" value="Village Worker - Illiterate">
+                            <label class="form-check-label" for="category-f">f. He is not resident of a town, Tehsil or district headquarters and any of his parent is a semi-skilled or unskilled menial village worker, and the parents do not own any immovable property and are illiterate.</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" id="category-g" name="category_check" value="Town Residence - Katcha House">
+                            <label class="form-check-label" for="category-g">g. He is resident of a town, Tehsil or District Headquarters and his household resides in a Katcha house.</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Undertaking -->
+            <div class="form-section">
+                <h4>Under Taking</h4>
+                <div class="form-group">
+                    <label for="undertaking">I ___________________________father/mother/guardian under-take that the information provided in the admission form is true and that:</label>
+                    <textarea class="form-control" id="undertaking" name="undertaking" rows="5" required>
+1. My monthly income is not more than Rs. 25,000/- from all sources.
+2. Applicant’s age as of 31st March 2023 is not be more than:-
+    a. Boys: 10 – 12 years
+    b. Girls: 10 – 13 years
+3. According to my knowledge all the above given information is true and if any information is found false or wrong, the institution has the right to take any legal action. In this case the decision of institute will be final.
+                    </textarea>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="thumb-impression">Thumb Impression:</label>
+                        <input type="text" class="form-control" id="thumb-impression" name="thumb_impression" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="signature-guardian">Signature of Parent/Guardian:</label>
+                        <input type="text" class="form-control" id="signature-guardian" name="signature_guardian" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="signature-student">Signature of Student:</label>
+                        <input type="text" class="form-control" id="signature-student" name="signature_student" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="date">Date:</label>
+                        <input type="date" class="form-control" id="date" name="date" required>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Important Notes -->
+            <div class="form-section">
+                <h4>Important Notes:</h4>
+                <ul>
+                    <li>The applicant is entitled to the Priority No. _________given at the back of the form.</li>
+                    <li>The complete admission form must be submitted in the Admission Office of the relevant Daanish School.</li>
+                    <li>The following a,b,c must be attached at the time of submission of application form; d & e must be submitted to the school before admission is confirmed.
+                        <ul>
+                            <li>a. One copy of attested ID card of the parent/guardian.</li>
+                            <li>b. Attested copy of birth certificate.</li>
+                            <li>c. 03 photographs of the applicant.</li>
+                            <li>d. Attested Copy of B – Form.</li>
+                            <li>e. Copy of School Leaving Certificate.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Form Footer -->
+            <div class="form-footer">
+                <p>THIS FORM IS FREE OF COST / PHOTOCOPY CAN ALSO BE USED</p>
+            </div>
+        </form>
+    </div>
+
+    <!-- <script src="scripts.js"></script> -->
+</body>
+</html>

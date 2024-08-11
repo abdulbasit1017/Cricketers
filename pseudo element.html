@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo element</title>
+    <style>
+        li::after{
+            content: ' (extra text)';
+        }
+        li::before
+        {
+            content: '✔️';
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ul>
+</body>
+</html>
+
+<img  class="img-fluid" src="./Images/p1.jpg.webp">
+
+
+<section class="bg-light p-5 my-5">
+    <div class="container p-5 pb-5">
+        <h1 class="text-center">Client’s Feedback About Me</h1>
+        <p class="text-center text-secondary">It is very easy to start smoking but it is an uphill task to quit it. Ask any chain smoker or even a person.</p>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card" style="width:600px">
+                <div class="card-body">
+                    <img src="./Images/user2.png.webp" style="width: 50px;">
+                    <p class="card-text text-secondary text-end">Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills, the bigger the payoff you.</p>
+                    <h4 class="card-title">HARRIET MAXWELL</h4>
+                    <p class="text-secondary">CEO at Google</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 justify-content-center">
+            <div class="card" style="width:600px">
+                <div class="card-body">
+                    <img src="./Images/user1.png.webp" style="width: 50px;">
+                    <p class="card-text text-secondary text-end">Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills, the bigger the payoff you.</p>
+                    <h4 class="card-title">HARRIET MAXWELL</h4>
+                    <p class="text-secondary">CEO at Google</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+ 

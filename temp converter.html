@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="website2.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center p-2 text-danger">Card Of Temperature</h2>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Temperature Converter</h5>
+                <form id="tempForm">
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <label for="tempInput">Temperature</label>
+                            <input type="number" class="form-control" id="tempInput" placeholder="Enter temperature" required>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="unitInput">From</label>
+                            <select class="form-control" id="unitInput">
+                                <option value="C">Celsius</option>
+                                <option value="F">Fahrenheit</option>
+                                <option value="K">Kelvin</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="unitOutput">To</label>
+                            <select class="form-control" id="unitOutput">
+                                <option value="C">Celsius</option>
+                                <option value="F">Fahrenheit</option>
+                                <option value="K">Kelvin</option>
+                            </select>
+                        </div>
+                    </div>
+                   
+                </form>
+            </div>
+        </div>
+        <div class="card mt-3">
+            <div class="card-body">
+                <h5 class="card-title">Converted Temperature</h5>
+                <p id="result" class="card-text"></p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
+

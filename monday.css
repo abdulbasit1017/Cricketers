@@ -1,0 +1,94 @@
+body {
+    font-family: "Montserrat", sans-serif;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto
+}
+.header-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-links p {
+    display: inline-block;
+    margin-right: 22px;
+    font-weight: bold;
+    margin: 10px;
+    font-size: 14px;
+
+}
+.action-button p {
+    display: inline-block;
+    margin: 10px 40px;
+    font-weight: bold;
+    color: #96BB7C;
+    font-size: 14px;
+}
+.join-us-button {
+    display: inline-block;
+    padding: 15px 25px;
+    background-color: #96BB7C;
+    border-radius: 5px;
+    margin-right: 8px ;
+}
+.join-us-button p {
+    color: white !important; 
+    margin: 0;
+    font-size: 14px;
+}
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+.text-section {
+    max-width: 600px;
+}
+.brand-name h3 {
+    font-size: 24px;
+}
+.learn-more {
+    display: inline-block;
+    padding: 15px 25px;
+    border: 1px solid #96BB7C;
+    border-radius: 5px;
+}
+.learn-more p {
+    color: #96BB7C;
+    margin: 0;
+    font-size: 14px;
+}
+.text-section p {
+    font-size: 20px;
+    color: #737373;
+}
+.text-section h1 {
+    font-size: 58px;
+    color: #252B42;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.welcome-text {
+    font-size: 16px !important;
+    color: #96BB7C !important;
+    font-weight: 700;
+}
+.text-section {
+    min-width: 500px;
+}
+.image-section img {
+    width: 400px;
+    margin-top: 40px;
+}
+.image-section {
+    text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+    .hero {
+        justify-content: center;
+    }
+}

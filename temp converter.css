@@ -1,0 +1,21 @@
+/* styles.css */
+body {
+    background-color: #b5daff;
+}
+
+.h3
+{
+    max-width: 300px;
+}
+
+.card {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1000px;
+}
+
+#result {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+

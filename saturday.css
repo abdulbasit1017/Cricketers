@@ -1,0 +1,238 @@
+@media screen and (max-width: 400px) {
+    .hero {
+        justify-content: center;
+    }
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    background-color: white;
+    padding: 20px 40px;
+    margin-left: 15%;
+    margin-right: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.brand-name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.action-buttons a {
+    margin-left: 15px;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.login {
+    color: rgb(86, 219, 86);
+}
+
+.join {
+    background-color: #28a745;
+    color: white;
+}
+
+.join:hover {
+    background-color: #218838;
+}
+
+main {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 8%;
+    margin-bottom: 40px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.welcome {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin: 10px 0;
+}
+
+.hero p {
+    font-size: 25px;
+    color: #666;
+}
+
+.hero-buttons {
+    margin-top: 20px;
+}
+
+.hero-buttons .btn {
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn.primary {
+    background-color: #28a745;
+    color: white;
+}
+
+.btn.primary:hover {
+    background-color: #218838;
+}
+
+.btn.secondary {
+    background-color: white;
+    color: #28a745;
+    border: 1px solid #28a745;
+}
+
+.btn.secondary:hover {
+    background-color: #f1f2f3;
+}
+
+.hero-image img {
+    max-width: 400px;
+    border-radius: 20px;
+    margin-right: 10%;
+}
+
+.advice {
+    display: block;
+    margin-left: 20%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    width: 100%;
+    max-width: 1200px;
+}
+.advice-content
+{
+    max-width: 600px;
+}
+.advice h4 {
+    color: #28a745;
+}
+
+.advice h3 {
+    font-size: 40px;
+    margin: 20px 0;
+}
+
+.advice p {
+    font-size: 18px;
+    color: #666;
+}
+.features {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    margin: 40px 0;
+}
+
+.feature-card {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+    margin: 0 10px;
+}
+
+.feature-card img {
+    max-width: 100px;
+    position: start;
+    margin-bottom: 20px;
+}
+
+.feature-card h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.feature-card p {
+    color: #666;
+    font-size: 14px;
+}
+.container2
+{
+    background-color: lightpink;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.popular
+ {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    margin-left: 14%;
+    margin-right: 0%;
+    width: 100%;
+    max-width: 1200px;
+}
+.popular-content
+{
+    max-width: 600px;
+}
+.popular-content p
+{
+    margin-left: 0%;
+}
+.popular h3 {
+    font-size: 40px;
+    margin: 20px 0;
+}
+.popular img {
+    max-width: 400px;
+    border-radius: 20px;
+    justify-content: inline;
+}
+.box
+{
+    background-color: rgb(226, 89, 89);
+}
+.popular-content button a
+{
+    text-decoration: none;
+    color: lightgreen;
+}

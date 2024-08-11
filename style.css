@@ -1,0 +1,52 @@
+body {
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.header.box {
+    boxshadow: 5px 5px green;
+}
+
+.logo {
+    width: 100px;
+}
+
+.school-name {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-row {
+    margin-bottom: 1rem;
+}
+
+.category-group .form-check {
+    margin-right: 15px;
+}
+
+.photo-box {
+    display: flex;
+    align-items: center;
+}
+
+.photo-box input[type="file"] {
+    margin-right: 10px;
+}
+
+h4 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
