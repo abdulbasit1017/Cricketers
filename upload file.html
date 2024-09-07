@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Upload</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center">Upload Documents</h2>
+        <form id="uploadForm">
+            <div class="form-group">
+                <label for="studentId">Student ID</label>
+                <input type="text" class="form-control" id="studentId" placeholder="Enter your student ID" required>
+            </div>
+            <div class="form-group">
+                <label for="document">Upload Document</label>
+                <input type="file" class="form-control-file" id="document" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Upload</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('uploadForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const fileInput = document.getElementById('document');
+            if (fileInput.files.length > 0) {
+                alert('Document uploaded successfully!');
+            } else {
+                alert('Please select a document to upload.');
+            }
+        });
+    </script>
+</body>
+</html>

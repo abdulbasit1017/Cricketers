@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         if (!allFilled) {
             event.preventDefault();
-            alert("Please fill in all required fields.");
+            alert("Please fill in all required fields.");hhhhh
         }
     });
 });
